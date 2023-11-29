@@ -1,17 +1,15 @@
 import Image from 'next/image';
 import Hero from './Components/Hero';
-import styles from '../styles/Home.module.css';
 import About from './Components/About';
-import Cardsection from './Components/Cardsection';
+
 import Services from './Components/Services';
+import CTA from './Components/CTA';
 export default function Home() {
   return (
     <div>
-      <div className={`${styles.Banner}`}>
-        <Hero />
-      </div>
+      <Hero />
       <About />
-      <Cardsection />
+      <CTA />
       <Services />
     </div>
   );

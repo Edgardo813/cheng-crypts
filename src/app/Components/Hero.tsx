@@ -1,39 +1,66 @@
-import React from 'react';
-import styles from '../../styles/Home.module.css';
-
-const Hero = () => {
+export default function Hero() {
   return (
-    <section className={`${styles.hero}`}>
-      <h1
-        className={` tracking-[0.3em] mt-0 lg:mt-10 text-lg min-h-[370px]:text-2xl sm:text-4xl md:text-5xl uppercase text-[#6213c2] ${styles.DropShadow}  text-center mb-2 sm:mb-4`}
-      >
-        ChengCriptados
-      </h1>
+    <div className='bg-black'>
+      <div className='relative'>
+        <div className='mx-auto max-w-7xl'>
+          <div className='relative z-10 pt-14 lg:w-full lg:max-w-2xl'>
+            <svg
+              className='absolute inset-y-0 right-8 hidden h-full w-80 translate-x-1/2 transform fill-black lg:block'
+              viewBox='0 0 100 100'
+              preserveAspectRatio='none'
+              aria-hidden='true'
+            >
+              <polygon points='0,0 90,0 50,100 0,100' />
+            </svg>
 
-      <h3
-        className={`text-center text-[13px] min-[370px]:text-xl sm:text-2xl md:text-3xl uppercase text-white ${styles.DropShadow}`}
-      >
-        Lorem ipsum dolor sit.
-      </h3>
-
-      <div className='mx-[40px] mt-3 mb-0 md:mx-[190px] md:mt-4  text-center text-white font-light '>
-        <p className='text-[14px] md:text-lg lg:text-xl '>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Exercitationem consequuntur recusandae quidem aliquid quis, error,
-          sapiente culpa sed id quae facere aperiam vitae laborum beatae quia
-          delectus, ut ipsum voluptatem itaque animi.
-        </p>
+            <div className='relative px-6 py-32 sm:py-40 lg:px-8 lg:py-56 lg:pr-0'>
+              <div className='mx-auto max-w-2xl lg:mx-0 lg:max-w-xl'>
+                <div className='hidden sm:mb-10 sm:flex'>
+                  <div className='relative rounded-full px-3 py-1 text-sm leading-6 text-slate-400 ring-1 ring-gray-900/10 hover:ring-gray-900/20'>
+                    Anim aute id magna aliqua ad ad non deserunt sunt.{' '}
+                    <a
+                      href='/cursos'
+                      className='whitespace-nowrap font-semibold text-purple-700'
+                    >
+                      <span className='absolute inset-0' aria-hidden='true' />
+                      Ver más <span aria-hidden='true'>&rarr;</span>
+                    </a>
+                  </div>
+                </div>
+                <h1 className='text-4xl font-bold tracking-tight text-slate-300 sm:text-6xl'>
+                  El mejor servicio de Cripto Seguridad Para Ti
+                </h1>
+                <p className='mt-6 text-lg leading-8 text-slate-400'>
+                  Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
+                  qui lorem cupidatat commodo. Elit sunt amet fugiat veniam
+                  occaecat fugiat aliqua.
+                </p>
+                <div className='mt-10 flex items-center gap-x-6'>
+                  <a
+                    href='#'
+                    className='rounded-md bg-purple-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm bgHover-Primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+                  >
+                    Contacta con nosotros
+                  </a>
+                  <a
+                    href='/cursos'
+                    className='text-sm font-semibold leading-6 text-slate-400 shadow-md rounded-md px-3.5 py-2.5'
+                  >
+                    Ver Cursos <span aria-hidden='true'>→</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className='bg-white lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2'>
+          <img
+            className='aspect-[3/2] object-cover lg:aspect-auto lg:h-full lg:w-full'
+            src='/images/background.jpg'
+            alt=''
+          />
+        </div>
       </div>
-
-      <div className='border-[1px] pl-1 pr-1 pb-[0.20rem]  md:pt-[0.60rem] md:pb-[0.60rem] md:pl-[0.30rem] md:pr-[0.30rem] md:border-[1px] border-[#a8a8a8]  rounded-full mt-[25px] sm:mt-[35px] cursor-pointer'>
-        <a
-          className={` cursor-pointer bg-[#6213c2] text-[11px] p-4 pt-1 pb-1 md:text-[16px] text-white md:p-9 md:pt-2 md:pb-2  rounded-full font-normal uppercase `}
-        >
-          Descargar
-        </a>
-      </div>
-    </section>
+    </div>
   );
-};
-
-export default Hero;
+}
